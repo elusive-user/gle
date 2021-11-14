@@ -4,7 +4,9 @@
 @import 'global';
 
 .header {
-  padding: 37px 75px;
+  padding: 37px 0;
+  max-width: 1800px;
+  margin: 0 auto;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -13,8 +15,8 @@
 }
 .logo {
   &__title {
-    font-size: 72px;
-    line-height: 70px;
+    font-size: 36px;
+    line-height: 58px;
     padding-left: 65px;
     position: relative;
     color: $accent;
@@ -96,7 +98,7 @@
     background-color: #edf1f4;
     display: flex;
     align-items:center;
-    justify-content: center
+    justify-content: center;
   }
 
   &__link--dots{
