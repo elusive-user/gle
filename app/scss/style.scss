@@ -5,8 +5,10 @@
 
 .header {
   padding: 37px 0;
-  max-width: 1800px;
-  margin: 0 auto;
+  &__container{
+    max-width: 1800px; 
+    margin: 0 auto;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -130,6 +132,9 @@
     width: 200px;
     margin-right: 100px;
   }
+  &__item-form{
+    max-width: 270px;
+  }
   &__logo-title{
     margin-bottom: 25px;
   }
@@ -171,7 +176,7 @@
     @extend %dmsans-400;
     border: none;
     color: #fff;
-    padding: 13px 19px 13px 15px;
+    padding: 13px 18px 13px 15px;
   }
 }
 .footer-bottom {
@@ -184,8 +189,6 @@
     line-height: 32px;
     @extend %rubik-400;
     color: #7b7b7b;
-  }
-  &__nav {
   }
   &__nav-link{
     margin-right: 28px;
