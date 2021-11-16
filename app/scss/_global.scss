@@ -28,3 +28,9 @@ a{
   line-height: 32px;
   @extend %rubik-400;
 }
+
+%container-1770{
+  max-width: 1790px;
+  margin: 0 auto;
+  padding: 0 10px;
+}

@@ -6,15 +6,11 @@
 
 .header {
   padding: 37px 0;
-  &__container{
-    max-width: 1780px; 
-    margin: 0 auto;
-    padding: 0 10px;
-  }
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @extend %container-1770;
   }
 }
 .logo {
@@ -211,6 +207,7 @@
 }
 
 .top-slider {
+  @extend %container-1770;
   background-image: url(../images/slider/slider-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -279,6 +276,70 @@
     }
   }
 }
+
+.slider-info {
+  padding: 45px 0;
+  background-color: #fef7f0;
+  @extend %container-1770;
+  &__items {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item{
+    padding-left: 75px;
+  }
+  &__item--support {
+    position: relative;
+    &::after{
+      content: '';
+      background-image: url(../images/slider/support.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 11px;
+      left: 0px;
+      width: 52px;
+      height: 54px;
+    }
+  }
+  &__item--delivery {
+    position: relative;
+    &::after{
+      content: '';
+      background-image: url(../images/slider/deliver.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 15px;
+      left: 0px;
+      width: 52px;
+      height: 54px;
+    }
+  }
+  &__item--payment {
+    position: relative;
+    &::after{
+      content: '';
+      background-image: url(../images/slider/payment.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 11px;
+      left: 0px;
+      width: 52px;
+      height: 54px;
+    }
+  }
+  &__item-title {
+    font-size: 18px;
+    line-height: 40px;
+    @extend %dmsans-700;
+  }
+  &__item-text {
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 220px
+    }
+}
+
 
 
 
