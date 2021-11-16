@@ -1,13 +1,15 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'lib';
 @import 'global';
 
 .header {
   padding: 37px 0;
   &__container{
-    max-width: 1800px; 
+    max-width: 1780px; 
     margin: 0 auto;
+    padding: 0 10px;
   }
   &__inner {
     display: flex;
@@ -207,6 +209,77 @@
     right: -16px;
   }
 }
+
+.top-slider {
+  background-image: url(../images/slider/slider-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  center 65%;
+  padding: 220px 0 45px;
+  &__items {
+    padding: 0 10px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+  &__title {
+    max-width: 470px;
+    font-size: 72px;
+    line-height: 70px;
+    @extend %rubik-500;
+    color: $default;
+    margin-bottom: 40px;
+  }
+  &__text {
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color: $accent;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-500;
+    padding-left: 26px;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    li{
+      padding: 0 5px;
+      button{
+      border: none;
+      line-height: 11px;
+      font-size: 9px;
+      border-radius: 50%;
+      width: 29px;
+      height: 29px;
+      padding: 0;
+      background-color: #fde3cc;
+      color: $accent;
+      @extend %rubik-400;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+          color: $default;
+          @extend %rubik-500;
+        }
+      }
+    }
+  }
+}
+
 
 
 
