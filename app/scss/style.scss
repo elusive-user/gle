@@ -155,7 +155,7 @@
     color: #7b7b7b;
   }
   &__form {
-    display: inline-block;
+    display: flex;
   }
   &__form-input {
     max-width: 170px;
@@ -282,7 +282,7 @@
         button{
           background-color: #fff;
           color: $default;
-          @extend %rubik-500;
+          @extend %dmsans-700;
         }
       }
     }
@@ -352,6 +352,7 @@
 }
 
 .lamp {
+  margin-bottom: 95px;
   &__container{
     @extend %container-1770;
   }
@@ -380,7 +381,8 @@
   &__item-img-right{
     position: absolute;
     bottom: 74px;
-    right: 514px;
+    // right: 514px;
+    right: calc(58% - 500px);
   }
   &__item-title {
     font-size: 26px;
@@ -413,9 +415,21 @@
     right: 20px;
     fill: #436372;
     }
-  }
-  
+  }  
 }
+
+.video-popup {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 105px;
+}
+
 
 
 

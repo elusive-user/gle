@@ -25,3 +25,10 @@ $accent: #436372;
    font-family: 'DMSans-Regular', sans-serif;
   font-weight: 400;
 }
+
+@function max($numbers...) {
+ @return m#{a}x(#{$numbers});
+}
+@function max($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
