@@ -6,11 +6,13 @@
 
 .header {
   padding: 37px 0;
+  &__container{
+    @extend %container-1770;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @extend %container-1770;
   }
 }
 .logo {
@@ -206,8 +208,12 @@
   }
 }
 
-.top-slider {
+.slider{
   @extend %container-1770;
+}
+.top-slider {
+  max-width: 1770px;
+  margin: 0 auto;
   background-image: url(../images/slider/slider-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -248,6 +254,12 @@
     padding-top: 24px;
     padding-bottom: 20px;
     padding-right: 100px;
+    position: relative;
+  }
+  &__btn-img{
+    position: absolute;
+    top: 26px;
+    right: 18px;
   }
   .slick-dots{
     display: flex;
@@ -278,9 +290,8 @@
 }
 
 .slider-info {
-  padding: 45px 0;
+  padding: 45px;
   background-color: #fef7f0;
-  @extend %container-1770;
   &__items {
     display: flex;
     justify-content: space-around;
@@ -339,6 +350,73 @@
     max-width: 220px
     }
 }
+
+.lamp {
+  &__container{
+    @extend %container-1770;
+  }
+  &__items {
+    column-count: 2;
+    column-gap: 30px;
+    position: relative;
+  }
+  &__item {
+    width: 870px;
+    height: 390px;
+    background-color: #feefe2 ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 145px;
+    &:nth-last-child(1){
+      padding-right: 110px;
+    }
+  }
+  &__item-img-left{
+    position: absolute;
+    bottom: 85px;
+    left: 120px;
+  }
+  &__item-img-right{
+    position: absolute;
+    bottom: 74px;
+    right: 514px;
+  }
+  &__item-title {
+    font-size: 26px;
+    line-height: 32px;
+    @extend %dmsans-700;
+    margin-bottom: 20px;
+    color: $default;
+    max-width: 270px;
+  }
+  &__item-text {
+    font-size: 16px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color: $default;
+    margin-bottom: 35px;
+    max-width: 345px;
+  }
+  &__item-link {
+    border: 1px solid #436372;
+    color: #436372;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-500;
+    padding: 22px 85px 22px 20px;
+    border-radius: 4px;
+    position: relative;
+    &__img{
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    fill: #436372;
+    }
+  }
+  
+}
+
 
 
 
