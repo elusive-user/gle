@@ -22,6 +22,21 @@ body{
   flex-grow: 1;
 }
 
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend %rubik-500;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+.title {
+  @extend %dmsans-700;
+  font-size: 36px;
+  color: $title;
+}
+
 a{
   color: #7b7b7b;
   font-size: 16px;
