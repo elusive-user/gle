@@ -475,6 +475,7 @@
     }
   }
 .mix__btn {
+  cursor: pointer;
     transition: all .5s;
     border: none;
     @extend %dmsans-700;
@@ -585,10 +586,11 @@
     padding: 0 27px;
   }
   &__item-text {
+    min-height: 75px;
+    max-width: 295px;
     line-height: 1.2;
     font-size: 18px;
     color: $title;
-    padding-bottom: 18px;
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 20px;
   }
