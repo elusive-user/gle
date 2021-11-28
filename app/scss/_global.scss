@@ -89,3 +89,30 @@ a{
   color: #222933;
   @extend %rubik-300;
 }
+
+.pagination{
+  .pagination__list{
+    display: flex;
+  }
+  &__link{
+    color: $default;
+    padding: 0 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $num;
+    margin-right: 16px;
+  }
+  &__next{
+    padding: 18px;
+    border: 1px solid $num;
+    line-height: 12px;
+    color: $default;
+  }
+  &__link--active{
+    background-color: $num;
+    color: #fff;
+  }
+}
