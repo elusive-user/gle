@@ -1,5 +1,23 @@
 $(function () {
 
+  $('.detalis-slide__thumb').slick({
+    asNavFor: '.detalis-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false,
+  });
+
+  $('.detalis-slide__big').slick({
+    asNavFor: '.detalis-slide__thumb',
+    draggable: false,
+    arrows: false,
+    fade: true,
+  });
+
+  $('.select-style, .detalis-one__num').styler();
+
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
