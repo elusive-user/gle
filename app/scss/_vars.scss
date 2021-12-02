@@ -33,6 +33,14 @@ $num: #a3bbc8;
   font-weight: 400;
 }
 
+%btn{
+  padding: 0 16px;
+  background-color: $num;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
 %checkbox-hiden{
     width: 1px;
     height: 1px;
