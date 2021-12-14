@@ -1,6 +1,7 @@
 $default: #243f4d;
 $accent: #436372;
 $title: #191919;
+$num: #a3bbc8;
 
 %rubik-400{
    font-family: 'Rubik-Regular', sans-serif;
@@ -10,6 +11,11 @@ $title: #191919;
 %rubik-500{
    font-family: 'Rubik-Medium', sans-serif;
    font-weight: 500;
+}
+
+%rubik-300{
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
 }
 
 %dmsans-700{
@@ -25,6 +31,23 @@ $title: #191919;
 %dmsans-400{
    font-family: 'DMSans-Regular', sans-serif;
   font-weight: 400;
+}
+
+%btn{
+  padding: 0 16px;
+  background-color: $num;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+%checkbox-hiden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
 }
 
 @function max($numbers...) {

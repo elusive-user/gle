@@ -37,6 +37,40 @@ body{
   color: $title;
 }
 
+.breadcrumbs {
+  &__list {
+  display: flex;
+  text-align: left;
+  }
+  &__item {
+    line-height: 1;
+    padding-right: 16px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      border-right: 1px solid #909499;
+      transform: rotate(25deg);
+      height: 11px;
+      right: 7px;
+      top: 5px;
+    }
+    &:last-child{
+      padding-right: 0;
+      a{
+        color: $title;
+      }
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link {
+    line-height: 1;
+    font-size: 14px;
+  }
+}
+
 a{
   color: #7b7b7b;
   font-size: 16px;
@@ -48,4 +82,37 @@ a{
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+%top-title{
+  font-size: 36px;
+  color: #222933;
+  @extend %rubik-300;
+}
+
+.pagination{
+  .pagination__list{
+    display: flex;
+  }
+  &__link{
+    color: $default;
+    padding: 0 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $num;
+    margin-right: 16px;
+  }
+  &__next{
+    padding: 18px;
+    border: 1px solid $num;
+    line-height: 12px;
+    color: $default;
+  }
+  &__link--active{
+    background-color: $num;
+    color: #fff;
+  }
 }
