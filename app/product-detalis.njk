@@ -5,62 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>blog-detalis</title>
-  <link rel="stylesheet" href="css/blog-detalis.min.css">
+  <title>product-detalis</title>
+  <link rel="stylesheet" href="css/product-detalis.min.css">
 </head>
 
 <body>
-
-  <header class="header">
-    <div class="header__container">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="">
-        </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home+</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Services</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Pages+</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-nav">
-          <a class="user-nav__link user-nav__link--search" href="#">
-            <img class="user-nav__img" src="images/icons/search.svg" alt="search icon">
-          </a>
-          <div class="user-nav__inner">
-            <a class="user-nav__link" href="#">
-              <img class="user__nav__img" src="images/icons/heart.svg" alt="heart icon"
-                style="transform: rotateY(180deg);">
-              <span class="user-nav__num">0</span>
-            </a>
-            <a class="user-nav__link" href="#">
-              <img class="user-nav__img" src="images/icons/cart.svg" alt="cart icon">
-              <span class="user-nav__num">0</span>
-            </a>
-          </div>
-          <a class="user-nav__link user-nav__link--dots" href="#">
-            <img class="user-nav__img" src="images/icons/dots-menu.svg" alt="dots menu icon">
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
+  
+  {% include "app/module/_header/_header.html" %}
 
   <main class="main">
 
@@ -371,79 +322,7 @@
     </div>
   </main>
 
-    <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-top__item footer-top__item-contact">
-          <a class="logo footer__logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="">
-          </a>
-          <address class="footer-top__item-address">
-            ADDRESS: 4772 Wines Lane
-            Houston, TX 77032
-          </address>
-          <a class="footer-top__item-phone" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
-          <a class="footer-top__item-email" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
-        </div>
-        <div class="footer-top__item footer-top__item-nav">
-          <h6 class="footer-top__item-title">Services</h6>
-          <ul class="footer-top__item-list">
-            <li>
-              <a class="footer-top__item-link" href="#">About us</a>
-            </li>
-            <li>
-              <a class="footer-top__item-link" href="#">Return Policy</a>
-            </li>
-            <li>
-              <a class="footer-top__item-link" href="#">Our Blog</a>
-            </li>
-            <li>
-              <a class="footer-top__item-link" href="#">Contact Us</a>
-            </li>
-            <li>
-              <a class="footer-top__item-link" href="#">Terms & Condition</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__item footer-top__item-nav">
-          <h6 class="footer-top__item-title">Account</h6>
-          <ul class="footer-top__item-list">
-            <li>
-              <a class="footer-top__item-link" href="#">Your Account</a>
-            </li>
-            <li>
-              <a class="footer-top__item-link" href="#">Checkout</a>
-            </li>
-            <li>
-              <a class="footer-top__item-link" href="#">Login</a>
-            </li>
-            <li>
-              <a class="footer-top__item-link" href="#">Register</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__item footer-top__item-form">
-          <h6 class="footer-top__item-title">newsletter</h6>
-          <p class="footer-top__item-text">
-            Subscribe by our newsletter and get update protidin.
-          </p>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="email" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p class="footer-bottom__copy">©2020 CopyRight Example. All rights reserved.</p>
-        <div class="footer-bottom__nav">
-          <a class="footer-bottom__nav-link footer-bottom__nav-line" href="#">Home</a>
-          <a class="footer-bottom__nav-link footer-bottom__nav-line" href="#">About</a>
-          <a class="footer-bottom__nav-link footer-bottom__nav-line" href="#">Blog</a>
-          <a class="footer-bottom__nav-link" href="#">Contact</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {% include "app/module/_footer/_footer.html" %}
 
   <script src="js/main.min.js"></script>
 </body>

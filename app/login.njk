@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="css/login.min.css">
+</head>
+
+<body>
+  
+  {% include "app/module/_header/_header.html" %}
+
+  <main class="main">
+
+    <section class="top">
+      <h2 class="top__title">Log in</h2>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Home
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Log in
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="model">
+      <div class="container">
+        <form class="model__form" action="#">
+          <label class="model__label">
+            Username or email address *
+            <input class="model__input" type="text" required>
+          </label>
+          <label class="model__label">
+            Password *
+            <input class="model__input" type="password" required>
+          </label>
+          <button class="model__btn">Login</button>
+          <label class="model__label model__checkbox-label">
+            <div class="checkbox__inner">
+              <input type="checkbox">
+              Remember me
+            </div>
+              <a class="model__error" href="#">Lost your password?</a>
+          </label>
+          <a class="model__link" href="#">Not registered? No problem</a>
+          <button class="model__create-btn">Create an account</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="partners">
+      <div class="container">
+        <div class="partners__inner">
+          <img class="partners__img" src="images/icons/logo-partner-1.png" alt="partners image">
+          <img class="partners__img" src="images/icons/logo-partner-2.png" alt="partners image">
+          <img class="partners__img" src="images/icons/logo-partner-3.png" alt="partners image">
+          <img class="partners__img" src="images/icons/logo-partner-4.png" alt="partners image">
+          <img class="partners__img" src="images/icons/logo-partner-5.png" alt="partners image">
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  {% include "app/module/_footer/_footer.html" %}
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
