@@ -1,0 +1,132 @@
+.slider{
+  @extend %container-1770;
+}
+.top-slider {
+  max-width: 1770px;
+  margin: 0 auto;
+  background-image: url(../images/slider/slider-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  center 65%;
+  padding: 220px 0 45px;
+  &__items {
+    padding: 0 10px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+  &__title {
+    max-width: 470px;
+    font-size: 72px;
+    line-height: 70px;
+    @extend %rubik-500;
+    color: $default;
+    margin-bottom: 40px;
+  }
+  &__text {
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    @extend %rubik-400;
+    color: $accent;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    background-color: #a3bbc8;
+    color: #fff;
+    padding: 24px 18px 20px 26px;
+    max-width: 200px;
+    height: 60px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    li{
+      padding: 0 5px;
+      button{
+      border: none;
+      line-height: 11px;
+      font-size: 9px;
+      border-radius: 50%;
+      width: 29px;
+      height: 29px;
+      padding: 0;
+      background-color: #fde3cc;
+      color: $accent;
+      @extend %rubik-400;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+          color: $default;
+          @extend %dmsans-700;
+        }
+      }
+    }
+  }
+}
+
+.slider-info {
+  padding: 45px;
+  background-color: #fef7f0;
+  &__items {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item{
+    padding-left: 75px;
+  }
+  &__item--support {
+    position: relative;
+    &::after{
+      content: '';
+      background-image: url(../images/slider/support.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 11px;
+      left: 0px;
+      width: 52px;
+      height: 54px;
+    }
+  }
+  &__item--delivery {
+    position: relative;
+    &::after{
+      content: '';
+      background-image: url(../images/slider/deliver.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 15px;
+      left: 0px;
+      width: 52px;
+      height: 54px;
+    }
+  }
+  &__item--payment {
+    position: relative;
+    &::after{
+      content: '';
+      background-image: url(../images/slider/payment.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 11px;
+      left: 0px;
+      width: 52px;
+      height: 54px;
+    }
+  }
+  &__item-title {
+    font-size: 18px;
+    line-height: 40px;
+    @extend %dmsans-700;
+  }
+  &__item-text {
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 220px
+    }
+}

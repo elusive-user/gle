@@ -1,0 +1,49 @@
+.lamp {
+  @extend %container-1770;
+  &__inner {
+    display: flex;
+  }
+  &__box {
+    max-width: 870px;
+    width: 100%;
+    padding: 95px 0;
+    overflow: visible;
+    background-color: #feefe2;
+  }
+  &__box-info {
+    max-width: 270px;
+    margin-left: 400px;
+    position: relative;
+    color: #243f4d;
+
+  }
+  &__box-img {
+    position: absolute;
+    left: -275px;
+    bottom: 0;
+  }
+  &__box-title {
+    @extend %dmsans-700;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  &__box-text {
+    @extend %rubik-400;
+    font-size: 16px;
+    margin-bottom: 32px;
+
+  }
+  &__btn {
+    max-width: 180px;
+    height: 60px;
+    padding: 22px 20px 24px 18px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #b3b7b5;
+    color: $accent;
+  }
+  &__box+.lamp__box {
+    margin-left: 30px;
+  }
+}
