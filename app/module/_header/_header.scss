@@ -92,15 +92,17 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) {  
   .header {
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     }
   }
   .menu{
+    position: absolute;
     order: 1;
     display: block;
     width: 100%;
@@ -110,8 +112,9 @@
     flex-direction: column;
     transform: translateY(-200%);
     transition: all .3s;
+    background-color: #fff;
     &.menu__list--active{
-      transform: translateY(0%);
+      transform: translateY(60%);
       transition: all .3s;
       }
     }
@@ -139,7 +142,13 @@
     display: block;
     margin-bottom: 20px;
   }
-  
+  .menu{
+    &__list{
+      &.menu__list--active{
+      transform: translateY(70%);
+      }
+    }
+  }
 }
 
 @media (max-width: 340px){
