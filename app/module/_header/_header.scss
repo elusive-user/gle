@@ -108,15 +108,15 @@
     &__list{
     justify-content: flex-end;
     flex-direction: column;
-    transform: translateX(200%);
+    transform: translateY(-200%);
     transition: all .3s;
     &.menu__list--active{
-      transform: translateX(0%);
+      transform: translateY(0%);
       transition: all .3s;
       }
     }
     &__list-item{
-      text-align: end;
+      text-align: center;
       a:hover{
         color: $default;
         border-bottom: 2px solid #fcd7b6;
@@ -139,19 +139,7 @@
     display: block;
     margin-bottom: 20px;
   }
-  .menu{
-    &__list{
-    transform: translateY(-200%);
-    transition: all .3s;
-    &.menu__list--active{
-      transform: translateX(0%);
-      transition: all .3s;
-      }
-    }
-    &__list-item{
-      text-align: center;
-    }
-  }
+  
 }
 
 @media (max-width: 340px){
