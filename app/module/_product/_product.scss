@@ -102,6 +102,7 @@
 
   @media (max-width: 1200px){
   .product {
+    margin-bottom: 80px;
   &__title {
     margin-bottom: 25px;
   }
@@ -122,7 +123,9 @@
 
 @media (max-width: 870px){
   .product {
-     padding-top: 45px;
+    margin-bottom: 80px;
+     padding-top: 50px;
+    //  margin-bottom: 60px;
   &__title {
     margin-bottom: 25px;
   }
@@ -138,7 +141,8 @@
 
 @media (max-width: 500px){
   .product {
-    padding-top: 45px;
+    margin-bottom: 60px;
+    padding-top: 50px;
   &__title {
     margin-bottom: 25px;
   }
@@ -162,6 +166,6 @@
 
 @media (max-width: 450px){
   .product{
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 }
