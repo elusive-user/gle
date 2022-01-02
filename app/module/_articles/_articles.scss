@@ -6,7 +6,7 @@
     background-color: #fef7f0;
     top: 325px;
     left: 0;
-    height: 170px;
+    height: 190px;
     width: 100%;
     z-index: -1;
   }
@@ -146,7 +146,7 @@
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
   .articles{
     &__title{
       font-size: 28px;
@@ -165,7 +165,7 @@
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 340px){
   .articles{
     &__title{
       font-size: 26px;
@@ -173,12 +173,6 @@
     &__item-text{
       font-size: 15px;
       margin-bottom: 10px;
-    }
-    &__item-span{
-      font-size: 12px;
-    }
-    &__items-bottom{
-      line-height: 10px;
     }
     &__items-bottom {
     margin-bottom: 20px;

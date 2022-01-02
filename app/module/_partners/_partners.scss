@@ -7,3 +7,36 @@
     align-items: center;
   }
 }
+
+@media (max-width: 900px){
+  .partners {
+    &__img{
+      width: 90px;
+      margin: auto 0;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .partners {
+    &__img{
+      width: 65px;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .partners {
+    &__img{
+      width: 50px;
+    }
+  }
+}
+
+@media (max-width: 340px){
+  .partners {
+    &__img{
+      width: 45px;
+    }
+  }
+}
