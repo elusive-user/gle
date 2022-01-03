@@ -116,3 +116,15 @@ a{
     color: #fff;
   }
 }
+
+@media (max-width: 500px){
+  .title{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 340px){
+  .title{
+    font-size: 28px;
+  }
+}

@@ -5,33 +5,39 @@
   }
   &__box {
     max-width: 870px;
+    height: 390px;
     width: 100%;
-    padding: 95px 0;
+    padding: 80px 0;
     overflow: visible;
     background-color: #feefe2;
+    position: relative;
+    &:last-child{
+      img{
+        left: 101px;
+      }
+    }
   }
   &__box-info {
     max-width: 270px;
     margin-left: 400px;
-    position: relative;
     color: #243f4d;
 
   }
   &__box-img {
     position: absolute;
-    left: -275px;
-    bottom: 0;
+    left: 148px;
+    bottom: 80px;
   }
   &__box-title {
     @extend %dmsans-700;
     font-size: 26px;
     line-height: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
   &__box-text {
     @extend %rubik-400;
     font-size: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 27px;
 
   }
   &__btn {
@@ -45,5 +51,73 @@
   }
   &__box+.lamp__box {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 1425px){
+  .lamp{
+    &__inner{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__box{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      & + .lamp__box{
+        margin-top: 50px;
+        margin-left: 0;
+      }
+      &:last-child{
+      img{
+        left: 0px;
+      }
+    }
+    }
+    &__box-info{
+      max-width: 100%;
+      margin: 0px;
+    }
+    &__box-img{
+      position: relative;
+      object-fit: contain;
+      bottom: 0;
+      left: 0;
+      margin-right: 18px;
+      height: 350px;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .lamp{
+    &__box-img{
+      height: 250px;
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .lamp{
+    &__box{
+      height: auto;
+      padding: 20px 10px;
+      & + .lamp__box{
+        margin-top: 30px;
+      } 
+    }
+    &__box-img{
+      display: none;
+    }
+    &__box-title{
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+    &__box-text{
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
   }
 }
