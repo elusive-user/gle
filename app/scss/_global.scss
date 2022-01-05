@@ -118,12 +118,18 @@ a{
 }
 
 @media (max-width: 500px){
+  .top__title{
+    font-size: 30px;
+  }
   .title{
     font-size: 30px;
   }
 }
 
 @media (max-width: 340px){
+  .top__title{
+    font-size: 24px;
+  }
   .title{
     font-size: 28px;
   }
