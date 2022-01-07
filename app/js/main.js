@@ -4,6 +4,10 @@ $(function () {
     $('.menu__list').toggleClass('menu__list--active');
   });
 
+  $('.product-list__filters-btn').on('click', function () {
+    $('.product-list__filters').toggleClass('product-list__filters--active');
+  });
+
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
