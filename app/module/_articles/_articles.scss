@@ -181,9 +181,6 @@
 
 @media (max-width: 340px){
   .articles{
-    &__title{
-      font-size: 26px;
-    }
     &__item-text{
       font-size: 15px;
       margin-bottom: 10px;
@@ -192,5 +189,8 @@
     margin-bottom: 20px;
     margin-top: 15px;
     }
+  }
+  .articles__title.title{
+    font-size: 26px;
   }
 }

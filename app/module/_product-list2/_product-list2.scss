@@ -1,0 +1,136 @@
+.pagination-list-2{
+  display: flex;
+  margin-top: 75px;
+}
+
+.product-list-2 {
+  &__content{
+    margin-left: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    max-width: 870px;
+    height: 500px;
+    margin-bottom: 40px;
+  }
+  &__box-img {
+    border: 2px solid #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 500px;
+    background-color: #fefefe;
+  }
+  &__info {
+    max-width: 445px;
+    margin-left: 50px;
+  }
+  &__title {
+    @extend %rubik-400;
+    font-size: 40px;
+    line-height: 26.5px;
+    color: $title;
+    margin-bottom: 26px;
+  }
+  &__price {
+    @extend %rubik-400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #333333;
+    margin-bottom: 28px;
+  }
+  &__text {
+    @extend %rubik-400;
+    margin-bottom: 30px;
+  }
+  &__link-box {
+    display: flex;
+  }
+  &__link {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    margin-right: 10px;
+    &:hover{
+      background-color: $num;
+      path{
+        fill: #fff;
+      }
+    }
+  }
+  &__link--cart{
+    position: relative;
+    transition: all .3s;
+    &:hover{
+      border-radius: 5px;
+      .button-box{
+        display: block;
+      }
+    }
+  }
+}
+
+@media(max-width: 1000px){
+  .product-list-2{
+    &__img{            
+      max-width: 200px;
+    }
+    &__info{
+      margin-left: 0;
+    }
+    &__content{
+      margin-left: 0;
+    }
+    &__box-img{
+      margin-right: 10px;
+    }
+  }
+}
+
+@media(max-width: 600px){
+  .product-list-2{
+    &__box-img{            
+      height: auto;
+      width: 100%;
+      margin-bottom: 30px;
+      border: none;
+    }
+    &__item{
+      flex-direction: column;
+      border: 2px solid #f7f7f7;
+      background-color: #fefefe;
+      padding: 10px;
+      height: auto;
+    }
+    &__text{
+      order: 0;
+    }
+    &__link-box{
+      order: 1;
+    }
+  }
+}
+
+@media(max-width: 450px){
+  .product-list-2{
+    &__title{
+      font-size: 26px;
+    }
+    &__price{
+      margin-bottom: 15px;
+    }
+    &__text{
+      margin-bottom: 15px;
+    }
+  }
+  .pagination-list-2{
+    margin-top: 45px;
+  }
+}
