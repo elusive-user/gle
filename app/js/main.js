@@ -4,6 +4,10 @@ $(function () {
     $('.menu__list').toggleClass('menu__list--active');
   });
 
+  $('.product-list__filters-btn').on('click', function () {
+    $('.product-list__filters').toggleClass('product-list__filters--active');
+  });
+
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
@@ -18,12 +22,32 @@ $(function () {
     slidesToScroll: 1,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   $('.detalis-slide__thumb').slick({
     asNavFor: '.detalis-slide__big',
     focusOnSelect: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     vertical: true,
     draggable: false,

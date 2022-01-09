@@ -1,0 +1,128 @@
+.blog {
+  padding: 120px 0;
+  &__inner {
+    display: flex;
+  }
+  &__item {
+    max-width: 830px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+  }
+  &__item-namebox {
+    width: 275px;
+    height: 70px;
+    background-color: $num;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    margin-top: -70px;
+    position: absolute  ;
+    font-size: 12px;
+  }
+  &__item-title {
+    @extend %rubik-400;
+    margin: 40px 0;
+    color: #333333;
+    font-size: 36px;
+  }
+  &__item-text {
+    max-width: 800px;
+    margin-bottom: 38px;
+  }
+  &__item-btn {
+    width: 180px;
+    height: 60px;
+    border: 1px solid $num;
+    padding: 0 20px;
+    color: $num;
+  }
+  &__img {
+    margin-right: 16px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.blog-recent {
+  &__label {
+    margin-bottom: 25px;
+  }
+  &__info {
+    line-height: 1px;
+  }
+  &__link {
+    font-size: 14px;
+    color: #333333;
+    @extend %rubik-400;
+  }
+  &__date {
+    color: #9a9a9a;
+    font-size: 12px;
+    @extend %rubik-400;
+    margin-top: 14px;
+    line-height: 16px;
+  }
+}
+
+@media(max-width: 1000px){
+  .product-list__filters.product-list__filters--active{
+      transform: translateX(0%);
+      transition: all .3s;
+      }
+    .product-list{
+      &__filters{
+      transform: translateX(-200%);
+      transition: all .3s;
+      background-color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 10px 15px;
+      width: 300px;
+      height: 100%;
+      overflow: auto;
+      z-index: 100;
+      }
+    }
+  .blog{
+    &__item{
+      margin-right: 0;
+      max-width: 100%;
+    }
+    &__inner{
+      display: block;
+      position: relative;
+    }
+  }
+}
+
+@media(max-width: 450px){
+  .blog{
+    padding: 60px 0;
+    &__item-title{
+      font-size: 28px;
+      margin: 20px 0;
+    }
+    &__item-namebox{
+      width: 200px;
+      height: 50px;
+      font-size: 10px;
+      margin-top: -50px;
+    }
+    &__item-text{
+      margin-bottom: 20px;
+    }
+    &__item{
+      margin-bottom: 30px;
+    }
+  }
+  .product-list{
+      &__filters{
+        width: 100%;
+      }
+    }
+    .filter-search__input{
+        width: 100%;
+  }
+}
